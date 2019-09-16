@@ -157,13 +157,14 @@ input[type=text], select, textarea {
     body {
          width: 100%; 
          border-left: 4px; 
-       
-    }
+    } 
   
     .container{
-        position: relative;
-        
-        width: 96%;    
+        /* box-sizing: content-box */
+        position: relative; 
+        width: 80%;  
+        /* flex-direction: column;
+         justify-content: left;   */
     }
     
     h1{
@@ -201,3 +202,47 @@ input[type=text], select, textarea {
         width: 33%;
     }
 }
+
+@media screen and (max-width: 640px) {
+    body {
+         width: 100%;  
+         border-left: 4px;
+    }
+  
+    .container{
+        position: relative;
+        width: 80%;       
+    }
+    
+    h1{
+        position: relative;
+        width:100%;
+        text-align: center;
+    }
+
+    .leftimage{
+        width:93%;
+    }
+
+    .rightimage{
+        width: 93%;
+    }
+    
+    .header-container{
+        height:100px;
+        float: none;
+    }
+
+    #header-buttons{
+        position: absolute;
+        width: 100%;
+        right: -35%;
+        
+        justify-items: center;
+    }
+    
+    .button, .button2{
+        padding: 0;
+    }
+}
+
